@@ -1,7 +1,0 @@
-total 19
-drwxr-xr-x 1 MeisterW 1049089   0 May 15 18:21 ./
-drwxr-xr-x 1 MeisterW 1049089   0 May 11 10:16 ../
-drwxr-xr-x 1 MeisterW 1049089   0 May 15 18:23 .git/
--rw-r--r-- 1 MeisterW 1049089  71 May 15 18:20 .gitignore
--rw-r--r-- 1 MeisterW 1049089   0 May 15 18:32 emptyfile2delete.txt
--rw-r--r-- 1 MeisterW 1049089 274 May 15 18:11 headings.html
