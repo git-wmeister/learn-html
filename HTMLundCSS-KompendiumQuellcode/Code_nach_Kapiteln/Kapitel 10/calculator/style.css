@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  height: calc(100vh - 1rem);
+  width: calc(100vw - 1rem);
+  margin: 0rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50vh auto;
+  gap: .25rem;
+}
+
+.container > div {
+  font-size: 10vw;
+  align-items: stretch;
+  display: flex;
+}
+
+.display {
+  display: flex;
+  height: 90%;
+  font-size: 20vw !important;
+  align-items: flex-end !important;
+  justify-content: flex-end;
+  color: white;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  line-height: 100%;
+  width: 100%;
+}
+
+.button > a {
+  background-color: mediumslateblue;
+}
+
+
+.num > a {
+  background-color: cornflowerblue;
+}
+
+.num > a:active, .button > a:active {
+  background-color: steelblue;
+}

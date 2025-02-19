@@ -1,0 +1,18 @@
+Options +Includes
+AddType text/html .shtml
+AddOutputFilter INCLUDES .shtml
+SSILegacyExprParser on
+
+
+DirectoryIndex design18_opt.shtml
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(gif|ico|jpeg|jpg|png|css|js|woff2)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+</IfModule>
+
+RewriteEngine on
+Options +FollowSymlinks
+RewriteBase /uebungen
+RewriteRule kontakt kontaktformular07.shtml

@@ -1,0 +1,169 @@
+@keyframes scroll-down-ani {
+  0%    {bottom: 10%;}
+  100%  {bottom: 5%;}
+}
+
+body {
+  margin: 0px;
+}
+
+
+main {
+  padding: 0px;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+section h2 {
+  all: unset;
+  transition: background-color 5s cubic-bezier(0.25,0.2,.25,1);
+}
+
+section h2:hover {
+  background-color: green;
+}
+
+
+section#start {
+  background-color: lightgrey;
+}
+
+section#start #scroll-down {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  animation-name: scroll-down-ani;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+section#text {
+  background-color: azure;
+}
+
+section#kontakt {
+  background-color: dimgrey;
+}
+
+#layover {
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+}
+
+#layover #dialog {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  margin-top: 5%;
+  background-color: white;
+  border: 5px solid steelblue;
+  border-radius: 10px;
+}
+
+@keyframes loader {
+  	0% {background-position: 0% 50%;}
+     50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+#layover #dialog #loader {
+  width: 226px;
+  height: 1em;
+  border: 1px solid darkgrey;
+  margin: 1em auto 0em auto;
+  border-radius: 10px;
+  background-image: repeating-linear-gradient(-45deg, white 0px 10px,
+steelblue 10px 20px);
+  background-size: 200% 1000%;
+  animation: loader 10s linear infinite;
+}
+
+
+section#separator {
+  position: relative;
+  height: 20vh;
+}
+
+section#separator #right {
+  position: relative;
+  width: 150%;
+  margin: -20vh 0px 0px -25%;
+  height: 60vh;
+  background-color: azure;
+  transform: rotate(10deg);
+  z-index: 20;
+}
+
+section#separator #left {
+  position: relative;
+  width: 150%;
+  margin: -30vh 0px 0px -25%;
+  height: 40vh;
+  z-index: 10;
+  background-color: skyblue;
+  transform: rotate(-10deg);
+}
+
+section#text {
+  width: 100%;
+  background-color: azure;
+  min-height: 100vh;
+  height: initial;
+  padding: 3em 0em 15vh 0em;
+  column-count: 3;
+  column-gap: 1em;
+  column-rule: 1px dotted steelblue;
+}
+
+section#text h2 {
+  font-size: 150%;
+  text-align: center;
+  display: block;
+  column-span: all;
+}
+
+section#text p{
+  margin: 1em;
+  text-align: justify;
+}
+
+#text h2 ~ p {
+  /*display: none;*/
+}
+
+#text h2 + p {
+  display: inherit;
+  font-weight: bold;
+  column-span: all;
+}
+
+#text h2 ~ p:last-of-type {
+  text-align: center;
+  display: block;
+  column-span: all;
+}
+
+@keyframes ani1 {
+  0%	{left: 0%}
+100%  {left: 100%}
+}
+
+#ani-1 {
+position: absolute;
+width: 50px;
+height: 50px;
+top: 100px;
+border: 1px solid slategray;
+background-color: azure;
+animation-name: ani1;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}

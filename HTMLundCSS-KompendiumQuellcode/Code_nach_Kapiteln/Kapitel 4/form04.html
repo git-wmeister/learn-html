@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulartest</title>
+  </head>
+  <body>
+    <form>
+      <p>
+        <input type="text" name="form_firstname" id="form_firstname" placeholder="Ihr Vorname"><br>
+        <input type="text" name="form_name" id="form_name" placeholder="Ihr Name"><br>
+        <input type="tel" name="form_number" id="form_number" placeholder="Ihre Telefonnummer">
+      </p>
+      <p><input type=”text” list="subjects" name="form_subject"
+      id="form_subject" placeholder="Thema Ihrer Anfrage"></p>
+
+            <datalist id="subjects">
+                <option value="Frage zu HTML an sich">
+                <option value="Frage zum Foto mit den Pyramiden">
+                <option value="Frage nach der Uhrzeit">
+                <option value="Frage nach dem Essen">
+                <option value="Frage zum Wetter">
+            </datalist>
+
+  	  <input type="submit" name="form_submit" id="form_submit">
+      <input type="reset" name="form_reset" id="form_reset">
+   </form>
+  </body>
+</html>

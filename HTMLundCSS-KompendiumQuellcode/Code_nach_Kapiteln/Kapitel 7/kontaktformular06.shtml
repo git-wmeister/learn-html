@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulartest</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css" media="screen" />
+  </head>
+  <body>
+    <nav>
+      <!--#include virtual="menu.shtml?kontakt" -->
+    </nav>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Ihre Daten</legend>
+            <p>
+              <div class="field">
+                <input type="text" name="form_firstname" id="form_firstname" placeholder="Max">
+                <label for="form_firstname">Vorname</label>
+              </div>
+              </div>
+              <div class="field">
+                <input type="text" name="form_name" id="form_name" placeholder="Mustermann">
+                <label for="form_name">Nachname</label>
+              </div>
+              <div class="field">
+                <input type="tel" name="form_number" id="form_number" placeholder="+49800452413">
+                <label for="form_number">Telefon</label>
+              </div>
+            </p>
+        </fieldset>
+        <fieldset>
+          <legend>Ihre Anfrage</legend>
+          <p>
+            <label for="form_name">Thema</label>
+            <input type="text" list="subjects" name="form_subject"
+              id="form_subject" placeholder="Thema Ihrer Anfrage">
+          </p>
+          <datalist id="subjects">
+            <option value="Frage zu HTML an sich">
+            <option value="Frage zum Foto mit den Pyramiden">
+            <option value="Frage nach der Uhrzeit">
+            <option value="Frage nach dem Essen">
+            <option value="Frage zum Wetter">
+          </datalist>
+
+          <p>
+            <label for="form_sel_newbie">Haben Sie uns schon mal geschrieben?</label>
+            <select name="form_sel_newbie" id="form_sel_newbie">
+              <option value="form_select_never">Noch nie!</option>
+              <option value="form_select_sometimes">Naja, vielleicht 1 bis 2 Mal</option>
+              <option value="form_select_often">Ich schreibe täglich aber es reagiert niemand.</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="form_message">Ihre Nachricht an uns</label>
+            <textarea cols="10" rows="5" name="form_message" id="form_message"></textarea>
+          </p>
+
+
+          <p>
+            <div class="upload-wrapper">
+              <button class="upload-button">Ergänzende Unterlagen hochladen</button>
+              <input type="file" name="form_file" id="form_file">
+            </div>
+          </p>
+        </fieldset>
+        <p>
+          <input type="checkbox" name="form_ds" id="form_ds" value="form_accept_ds" required>
+          <label for="form_ds">Ich akzeptiere die Datenschutzbestimmungen.</label>
+        </p>
+    	  <button type="submit" name="form_submit" id="form_submit">Mach schon!</button>
+        <button type="reset" name="form_reset" id="form_reset">Ach doch nicht</button>
+     </form>
+   </main>
+   <footer></footer>
+  </body>
+</html>

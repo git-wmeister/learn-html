@@ -1,0 +1,10 @@
+/* print.css */
+
+nav, .linkbutton {
+  display: none !important;
+}
+
+p {
+  orphans: 4;
+  widows: 4;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulartest</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/forms.css" media="screen" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Ihre Daten</legend>
+        <p>
+          <label for="form_firstname">Vorname</label>
+          <input type="text" name="form_firstname" id="form_firstname" placeholder="Ihr Vorname"><br>
+          <label for="form_name">Nachname</label>
+          <input type="text" name="form_name" id="form_name" placeholder="Ihr Name"><br>
+          <label for="form_number">Telefon</label>
+          <input type="tel" name="form_number" id="form_number" placeholder="Ihre Telefonnummer">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Ihre Anfrage</legend>
+        <p>
+          <label for="form_name">Thema</label>
+          <input type=”text” list="subjects" name="form_subject"
+            id="form_subject" placeholder="Thema Ihrer Anfrage">
+        </p>
+        <datalist id="subjects">
+          <option value="Frage zu HTML an sich">
+          <option value="Frage zum Foto mit den Pyramiden">
+          <option value="Frage nach der Uhrzeit">
+          <option value="Frage nach dem Essen">
+          <option value="Frage zum Wetter">
+        </datalist>
+
+        <p>
+          Haben Sie uns schon mal geschrieben?<br>
+          <input type="radio" name="form_newbie" id="form_newbie_never" value="never">
+          <label for="form_newbie_never">Noch nie!</label><br>
+          <input type="radio" name="form_newbie" id="form_newbie_sometimes" value="sometimes">
+          <label for="form_newbie_sometimes">Naja, vielleicht 1 bis 2 Mal</label><br>
+          <input type="radio" name="form_newbie" id="form_newbie_often" value="often">
+          <label for="form_newbie_often">Ich schreibe täglich aber es reagiert niemand.</label>
+        </p>
+
+        <p>
+          <label for="form_sel_newbie">Haben Sie uns schon mal geschrieben?</label>
+          <select name="form_sel_newbie" id="form_sel_newbie">
+            <option value="form_select_never">Noch nie!</option>
+            <option value="form_select_sometimes">Naja, vielleicht 1 bis 2 Mal</option>
+            <option value="form_select_often">Ich schreibe täglich aber es reagiert niemand.</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="form_message">Ihre Nachricht an uns</label>
+          <textarea cols="10" rows="5" name="form_message" id="form_message"></textarea>
+        </p>
+
+
+        <p>
+          <input type="file" name="form_file" id="form_file">
+          <label for="form_file">Ergänzende Unterlagen hochladen?</label>
+        </p>
+      </fieldset>
+      <p>
+        <input type="checkbox" name="form_ds" id="form_ds" value="form_accept_ds" required>
+        <label for="form_ds">Ich akzeptiere die Datenschutzbestimmungen.</label>
+      </p>
+  	  <button type="submit" name="form_submit" id="form_submit">Mach schon!</button>
+      <button type="reset" name="form_reset" id="form_reset">Ach doch nicht</button>
+
+   </form>
+  </body>
+</html>

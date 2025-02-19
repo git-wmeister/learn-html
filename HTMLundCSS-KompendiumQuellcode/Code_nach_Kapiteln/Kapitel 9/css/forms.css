@@ -1,0 +1,139 @@
+fieldset {
+  margin: 1em 0em;
+  background-color: #efefef;
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+  font-size: 70%;
+}
+
+legend {
+  float: left;
+}
+
+p {
+  clear: both;
+}
+
+input[type="text"], input[type="tel"], select, textarea {
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+  padding: .5rem;
+  margin: .5em;
+  box-sizing: border-box;
+  width: 50vw;
+}
+
+label {
+  display: block;
+  text-align: left;
+  width: 50vw;
+  margin: auto;
+  padding-top: 1em;
+}
+
+.upload-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 2em;
+}
+
+.upload-button {
+  border: 2px solid darkgrey;
+  background-color: white;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 50vw;
+}
+
+.upload-wrapper input[type=file] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+
+input[type="checkbox"] {
+  opacity: 0;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+  font-size: 100%;
+  line-height: 32px;
+  width: initial;
+  margin: 0px 1em;
+
+}
+
+input[type="checkbox"] + label::before {
+  width: 60px;
+  min-width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  border: 2px solid darkgrey;
+  background-color: whitesmoke;
+  content: "";
+  margin-right: 15px;
+  transition: background-color 0.5s linear;
+}
+
+input[type="checkbox"] + label::after {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+  content: "";
+  transition: margin 0.1s linear;
+  box-shadow: 0px 0px 5px grey;
+  position: absolute;
+  left: 2px;
+  top: 18px;
+}
+
+input[type="checkbox"]:checked + label::before{
+  background-color: steelblue;
+}
+
+input[type="checkbox"]:checked + label::after {
+  margin: 0 0 0 30px;
+}
+
+.field {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+.field label, .field input {
+  transition: all 0.2s;
+}
+
+
+.field input:placeholder-shown +  label {
+  transform-origin: left bottom;
+  transform: translate(1rem, 2.125rem) scale(1.5);
+  width: calc(100% - 1rem);
+  margin: 0px;
+}
+
+.field ::placeholder {
+  opacity: 0;
+}
+
+.field input:focus::placeholder {
+  opacity: 1;
+}
+
+.field input:not(:placeholder-shown) + label,
+.field input:focus + label {
+  transform: translate(0.5rem, 0em) scale(1);
+}

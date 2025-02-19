@@ -1,0 +1,82 @@
+/* playground.css */
+
+.boxed {
+  /*border: 1px solid;*/
+}
+
+#box-1 {
+  width: 50vw;
+  height: 50vh;
+  background-color: cadetblue;
+}
+
+#box-2 {
+  width: 50%;
+  height: 50%;
+  background-color: aliceblue;
+}
+
+#box-3 {
+  width: 50vw;
+  height: 50vh;
+  background-color: cornflowerblue;
+}
+
+#b1 {
+  grid-area: myHead;
+}
+
+#b2 {
+  grid-area: myMenu;
+}
+
+#b3 {
+  grid-area: myContent;
+  height: 30vh;
+}
+
+#b4 {
+  grid-area: myFooter;
+}
+
+#b5, #b6, #b7, #b8 {
+  display: none;
+}
+
+section {
+  margin: 5em 1em;
+  /*display: flex;*/
+  display: grid;
+  /*grid-template-columns: auto auto auto;*/
+  grid-template-areas: 'myHead myHead myHead'
+'myMenu myContent myContent' 'myFooter myFooter myFooter';
+  grid-gap: 10px;
+  /*height: 300px;*/
+  border: 1px solid black;
+
+}
+
+
+section div {
+  /*width: 60px;*/
+  background-color: lightgrey;
+  border: 1px solid steelblue;
+  text-align: center;
+  line-height: 60px;
+}
+
+
+section.center {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+}
+
+section.center div {
+  flex: initial;
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+}

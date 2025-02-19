@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bilder-Auflösungstest</title>
+  </head>
+  <body style="margin: 0px; padding: 1em;">
+    <img src="img/wasserfall.jpg" alt="Wasserfall dynamisch"
+         srcset="img/wasserfall.jpg     375w,
+                 img/wasserfall@2x.jpg  750w,
+                 img/wasserfall@3x.jpg 1125w"
+          sizes="(max-width:750px) calc(100vw - 2em), (max-width: 1125px) 70vw, calc(50vw - 2em)"  />
+
+
+  </body>
+</html>

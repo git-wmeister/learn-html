@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bilder-Auflösungstest</title>
+    <style>
+      img { width: calc(100% - 2em); margin: 1em;}
+    </style>
+  </head>
+  <body>
+    <picture>
+      <source srcset="img/moewe.jp2" type="image/jp2">
+      <source srcset="img/moewe@1x.avif 1x, img/moewe@2x.avif 2x, img/moewe@3x.avif 3x" type="image/avif">
+      <source srcset="img/moewe.webp" type="image/webp">
+      <img src="img/moewe.jpg" alt="Möve">
+    </picture>
+  </body>
+</html>

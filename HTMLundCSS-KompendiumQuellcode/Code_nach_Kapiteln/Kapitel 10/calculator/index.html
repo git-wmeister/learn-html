@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <title>Projekt-Taschenrechner</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Ein einfacher Taschenrechner als PWA">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    </head>
+  <body style="background-color: black;">
+    <div class="container">
+      <div id="display" class="display" style="grid-area: 1 / 1 / 1 / span 5;"></div>
+      <div class="num"><a href="#" id="7">7</a></div>
+      <div class="num"><a href="#" id="8">8</a></div>
+      <div class="num"><a href="#" id="9">9</a></div>
+      <div class="button"><a href="#" id="C">C</a></div>
+      <div class="button"><a href="#" id="AC">AC</a></div>
+      <div class="num"><a href="#" id="4">4</a></div>
+      <div class="num"><a href="#" id="5">5</a></div>
+      <div class="num"><a href="#" id="6">6</a></div>
+      <div class="button"><a href="#" id="bplus">+</a></div>
+      <div class="button"><a href="#" id="bminus">-</a></div>
+      <div class="num"><a href="#" id="1">1</a></div>
+      <div class="num"><a href="#" id="2">2</a></div>
+      <div class="num"><a href="#" id="3">3</a></div>
+      <div class="button"><a href="#" id="bmult">&times;</a></div>
+      <div class="button"><a href="#" id="bdiv">/</a></div>
+      <div class="button" style="grid-area: 5/ 4 / span 1 /span 2"><a href="#" id="bres">=</a></div>
+      <div class="num" style="grid-area: 5 / 1 /span 1 / span 2"><a href="#" id="0">0</a></div>
+      <div class="num"><a href="#" id="bcomma">,</a></div>
+    </div>
+  <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="description" content="eticks.de bietet individuelle Ticketshopsysteme für jeden Veranstalter. Sie bekommen das, was Sie wirklich brauchen und das zu fairen Preisen. Kein Baukasten. Keine Kompromisse.">
+	<meta name="description" content="Ticket, Print@Home, Köln, Karneval, Ticketshop, Kartenverkauf, süße Katzenvideos, RFID-Armbänder, Gürzenich, Maritim">
+	<title>eticks.de - Online-Ticketing für alle</title>
+
+	<link rel="stylesheet" href="css/eticks.min.css"/>
+	<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/eticks.js"></script>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+
+<body>
+
+	<div id="startimage"></div>
+  <header>
+		<img class="barcode" src="images/logo_website_trans.png"/>
+		<a href="./"><img src="images/logo_website.png"/></a>
+
+		<nav>
+			<ul>
+				<li><a href="#" onclick="jump('#about'); return false;">Über uns</a></li>
+				<li><a href="#" onclick="jump('#shops', 40); return false;">Shopsystem</a></li>
+				<li><a href="#" onclick="jump('#tickets'); return false;">Tickets</a></li>
+				<li><a href="#" onclick="jump('#prices', 40); return false;">Preise</a></li>
+				<li><a href="#" onclick="jump('#contact', 40); return false;">Kontakt</a></li>
+  		</ul>
+   	</nav>
+  </header>
+
+	<main>
+		<section class="white">
+			<div class="fullpic" style="background-image: url('./images/about.jpeg')">
+				<div class="textwrapper">
+					<h1>Kein Baukasten. Keine Kompromisse.</h1>
+					<h2>Nur exakt das, was Sie brauchen!</h2>
+				</div>
+			</div>
+			<a id="about"><h1>Online-Ticketing für alle</h1></a>
+			<h2></h2>
+			<span style="color:rgb(16,69,102)">eticks<span style="color:#993333">.</span>de</span> bietet hochgradig individuelle Lösungen rund um Ihre Veranstaltungstickets:<br> Von der Erstellung über den Vertrieb bis zum Erfassen und Entwerten am Einlass. <br><br>
+			Profitieren Sie von der langjährigen Erfahrung unseres Teams bestehend aus
+			<br> Programmierern, (Web-)Designern, Grafikern, Event-Managern, Werbepsychologen und Juristen.
+
+			<br><br>
+			<div class="textblockswrapper">
+				<div class="textblock">
+					<h3>Individuell</h1>
+					<p>Wir unterstützen Sie bei der Gestaltung <br>Ihrer individuellen <a href="#" onclick="jump('#tickets'); return false;">Ticketlösung</a>!
+					<br>Gehen Sie keine Kompromisse ein!</p>
+				</div>
+				<div class="textblock">
+					<h3>Workflow</h1>
+					<p>	Kernstück ist ein eigenes <a href="#" onclick="jump('#shops', 45); return false;">Shopsystem</a>,<br>
+						das wir nach Ihren Wünschen gestalten <br>
+						und in Ihre bestehende Infrastruktur integrieren.</p>
+				</div>
+				<div class="textblock">
+					<h3>Vielseitig</h1>
+					<p>Sie möchten verschiedene Ticketformate <br>für Ihre Veranstaltung anbieten? <br>
+					Kombinieren ist mit <span style="color:rgb(16,69,102)">eticks<span style="color:#993333">.</span>de</span>  kein Problem!
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="">
+			<a id="shops"><h1>Verkaufen Sie!</h1></a>
+			<h2>Wir kümmern uns um die Technik</h2>
+			<p>Bei <span style="color:rgb(16,69,102)">eticks<span style="color:#993333">.</span>de</span> erhalten Sie kein Baukastensystem, an das Sie Ihre Arbeitsabläufe anpassen müssen, sondern<br> <span class="em">Ihren eigenen Onlineshop mit maßgeschneidertem Workflow</span>.<br> Nutzen Sie Ihre Zeit für den Verkauf Ihrer Tickets und nicht zum Lernen neuer Programme!</p>
+			<div id="grayblock">
+				<div class="textwrapper">
+				<h1>Frontend</h1>
+				<p>Ihr Onlineshop wird nach Ihren Wünschen gestaltet und enthält zum Beispiel:</p>
+				<ul>
+					<li>mobiles und Desktopdesign nach Ihren Vorstellungen</li>
+					<li>Standardshopfunktionen wie Bestellungen durch registrierte Nutzer oder Gäste, Gutscheine, Newsletter, Onlinebezahlung wie PayPal&trade; etc.</li>
+					<li>Bereich für registrierte Kunden, z.B. zum Einsehen der Bestellhistorie</li>
+				</ul>
+				</div>
+			<img class="shopscreeny" src="images/ipad_shop.png" width="60%">
+			</div>
+			<div id="redblock">
+				<div class="textwrapper">
+				<h1>Backend</h1>
+				<p>Maßgeschneidert auf Ihre Abläufe &ndash; Ihr Backoffice, zum Beispiel mit folgenden Funktionen:</p>
+				<ul>
+					<li>Verwalten von Veranstaltungen, Versand- und Ticketoptionen</li>
+					<li>Verwalten von Käufen, Erfassen von Zahlungseingängen, Export für DATEV, CSV</li>
+					<li>Erstellen und Versenden von Rechnungen, Stornos, Lieferscheinen</li>
+					<li>Zuweisung von Sitzplätzen, Verwalten von Gutscheinen, Verfassen von Newslettern</li>
+					<li>Anbindung an die Post-API zum Erstellen von Briefmarken aus dem Backend, Statistiken, ...</li>
+				</ul>
+				</div>
+			<img class="shopscreeny" src="images/backoffice01.png" width="550px">
+			</div>
+		</section>
+		<div style="clear: both"></div>
+		<section class="white">
+			<div class="fullpic" style="background-image: url('images/tickets.jpeg')"></div>
+			<a id="tickets"><h1>Tickets für jede Zielgruppe!</h1></a>
+			Ob klassisches Papierticket oder RFID-Armband &ndash; wählen Sie die Ticketlösung,<br>
+			die am besten zu Ihrer Veranstaltung passt. Wir von <span style="color:rgb(16,69,102)">eticks<span style="color:#993333">.</span>de</span> unterstützen Sie dabei.
+			<br><br>
+			<div class="textblockswrapper">
+				<div class="textblock justify">
+					<h3>Papiertickets</h3>
+					<p>Wir lieben Papiertickets!<br>Und wir designen Sie auch für Sie!<br>
+					Wir entwerfen für Sie auf Wunsch Ihre Papiertickets. Ansprechende Designs ganz im Stil Ihrer Veranstaltung auch in Kombination mit modernen "Gimmiks", wie UV-Lack, der im Schwarzlicht z.B. ihr Logo leuchten lässt.</p>
+				</div>
+				<div class="textblock justify">
+					<h3>Print@Home</h3>
+					<p>	Gehen Sie mit der Zeit und sparen Sie "Verwaltungsaufwand", in dem Sie Print@Home-Tickets anbieten: <br>Ihre Kunden drucken die Tickets selbst oder laden sie auf ihr Smartphone. Zudem sparen sie Versandkosten. </p>
+				</div>
+				<div class="textblock justify">
+					<h3>RFID-Technik</h3>
+					<p>Erhöhen Sie die Kundenbindung mit Tickets, die auch als modischen Accessoire getragen werden können!<br>
+					Ob knallige RFID-Armbänder in Ihren Firmenfarben oder hochwertige RFID-Armbänder in dezenten Designs &ndash; sie sind der Hingucker während aber auch außerhalb Ihrer Veranstaltung.
+					</p>
+				</div>
+			</div>
+
+			<p>Zum Entwerten der Tickets am Einlass bieten wir Ihnen maßgeschneiderte Lösungen je nach Veranstaltungsgröße. <a href="#" onclick="jump('#contact'); return false;">Lassen Sie sich beraten!</a></p>
+
+		</section>
+		<div style="clear: both"></div>
+		<section class="white">
+			<a id="prices"><h1>Sie zahlen nur, wenn Sie auch verdienen.</h1></a>
+			<p>Lassen Sie sich von unseren fairen Preismodellen überzeugen.
+			<div style="clear:both"></div>
+			<div class="flexwrapper">
+				<div class="pricebox">
+				<div class="gradient-head"></div>
+				<div class="gradient-box">
+					<h1>Provisionsmodell</h1>
+					<div class="flexwrapper">
+						<div class="smallpricefield">
+							<h1>1,25%</h1>
+							<h2>des Ticketpreises*</h2>
+						</div>
+							<div class="plusfield">+</div>
+						<div class="smallpricefield">
+							<h1>0,15 €</h1>
+							<h2>pro Ticket*</h2>
+						</div>
+					</div>
+					<p class="description center">zzgl. einmaliger Einrichtungsgebühr für Ihren Onlineshop.</p>
+					<p class="center">Für alle Arten von Veranstaltungen</p>
+					<p class="description nospace center">&nbsp;</p>
+					<p>&nbsp;</p>
+					<h2>Inklusivleistungen</h2>
+					<ul>
+						<li class="highlight">Individueller Ticketshop in Ihrem Wunschdesign (mobiles und Desktopdesign)</li>
+						<li class="highlight">Umfangreiches Warenwirtschaftssystem nach Ihren Bedürfnissen</li>
+						<li class="highlight">E-Mail- und Telefon-Support</li>
+						<li class="highlight">Hosting Ihres Onlineshops auf dem eticks.de-Server in Deutschland<br>(Domainname z.B. <strong>ihr-name</strong>.eticks.de)</li>
+						<li class="highlight">Sichere Übertragung der Kundendaten durch SSL-Verschlüsselung</li>
+
+					</ul>
+				</div>
+				</div>
+				<div class="pricebox">
+					<div class="gradient-head"></div>
+					<div class="gradient-box">
+						<h1>Festpreismodell</h1>
+						<div class="flexwrapper">
+							<div class="largepricefield">
+								<h1>44,- €</h1>
+								<h2>pro Nutzungsmonat* **</h2>
+							</div>
+						</div>
+						<p class="description center">zzgl. einmaliger Einrichtungsgebühr für Ihren Onlineshop.</p>
+						<p class="center">Spezialangebot für Karnevalsvereine</p>
+						<p class="description nospace center">(sogar aus Düsseldorf)</p>
+						<p>&nbsp;</p>
+						<h2>Inklusivleistungen</h2>
+						<ul>
+							<li class="highlight">Individueller Ticketshop in Ihrem Wunschdesign (mobiles und Desktopdesign)</li>
+							<li class="highlight">Umfangreiches Warenwirtschaftssystem nach Ihren Bedürfnissen</li>
+							<li class="highlight">E-Mail- und Telefon-Support</li>
+							<li class="highlight">Hosting Ihres Onlineshops auf dem eticks.de-Server in Deutschland<br>(Domainname z.B. <strong>ihr-name</strong>.eticks.de)</li>
+							<li class="highlight">Sichere Übertragung der Kundendaten durch SSL-Verschlüsselung</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="pricebox">
+					<div class="gradient-head"></div>
+					<div class="gradient-box">
+						<h1>Whitelabelmodell</h1>
+						<div class="flexwrapper">
+							<div class="largepricefield">
+								<h1>auf Anfrage</h1>
+								<h2>Komplettpreis</h2>
+							</div>
+						</div>
+						<p class="description center">inkl. Einrichtungsgebühr für Ihren Onlineshop.</p>
+						<p class="center">Für alle Arten von Ticketshops</p>
+						<p class="description nospace center">&nbsp;</p>
+						<p>&nbsp;</p>
+						<h2>Inklusivleistungen</h2>
+						<ul>
+							<li class="highlight">Individueller Ticketshop in Ihrem Wunschdesign (mobiles und Desktopdesign)</li>
+							<li class="highlight">Umfangreiches Warenwirtschaftssystem nach Ihren Bedürfnissen</li>
+							<li class="highlight">E-Mail- und Telefon-Support</li>
+							<li class="highlight">Hosting Ihres Onlineshops auf Ihrem Server</li>
+							<li class="highlight">Einrichtung Ihres Servers für optimalen Betrieb des Shops (inkl. Datenbank, Backups etc.)</li>
+							<li class="highlight">Auf Wunsch ohne Hinweis auf eticks.de</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<p class="description">*Alle Preise sind Endpreise. Gemäß § 19 UStG wird keine Mehrwertsteuer erhoben.<br>** Nutzungsmonate sind Monate, in denen Sie Tickets in Ihrem Shop zum Verkauf anbieten. Mindestvertragsdauer 3 Monate.</p>
+			<h2>&nbsp;</h2>
+			<h2>Haben wir Sie überzeugt?</h2>
+			<p>Lassen Sie sich von uns beraten und <a href="#" onclick="jump('#contact', 40); return false;">vereinbaren Sie einen Rückruf</a>. Gerne können Sie uns auch <a href="#" onclick="jump('#contact', 40); return false;">per E-Mail kontaktieren</a>.</p>
+		</section>
+
+		<section class="contentheight">
+			<a id="contact"><h1>Haben Sie noch Fragen?</h1></a>
+			<p>Nutzen Sie das nachfolgende Kontaktformular, um mit uns in Verbindung zu treten.<br>Wenn Sie uns Ihre Telefonnummer hinterlassen, rufen wir Sie auch gerne zurück.</p>
+			<div id="form_error" class="error"></div>
+			<form id="contact_form">
+				<input type="text" id="form_name" placeholder="Ihr Name">
+				<input type="tel" id="form_phone" placeholder="Ihre Telefonnummer">
+				<input type="email" id="form_email" placeholder="Ihre E-Mail-Adresse">
+				<textarea cols="50" rows="10" id="form_message" placeholder="Ihre Nachricht an uns"></textarea>
+				<p class="description dark">Wir speichern diese Daten ausschließlich zur Beantwortung Ihrer Anfrage.</p>
+				<input type="submit" id="form_submit" value="Absenden" onclick="submit_contact(); return false;">
+			</form>
+			<p>&nbsp;</p>
+			<p>Sie können uns aber auch eine <a href="mailto:fragen@eticks.de">E-Mail schreiben</a>.</p>
+		</div>
+
+		<section id="imprint" class="contentheight white">
+				<h1>Impressum</h1>
+				<p>Angaben gemäß § 5 TMG</p>
+				<p><span style="color:rgb(16,69,102)">eticks<span style="color:#993333">.</span>de</span>
+					<p>E-Mail: <a href="mailto:fragen@eticks.de">&#102;&#114;&#097;&#103;&#101;&#110;&#064;&#101;&#116;&#105;&#099;&#107;&#115;&#046;&#100;&#101;</a></p>
+					<div class="scrollbox">
+					<p>Haftungsausschluss (Disclaimer)</p>
+
+					<p>Haftung für Inhalte</p>
+
+					<p>Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
+
+					<p>Haftung für Links</p>
+
+					<p>Unsere Seite enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p>
+
+					<p>Urheberrecht</p>
+
+					<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
+				</div>
+		</section>
+	</main>
+	<div style="clear:both"></div>
+	<footer>
+		<div class="footerinfo">
+			&copy; 2022 &nbsp;&nbsp;
+			<a href="/" target="_blank">eticks.de</a>
+		</div>
+		<div class="footerinfo" style="text-align: right;">
+			<a href="#" onclick="toggle_imprint(); return false;">Impressum</a>
+		</div>
+	</footer>
+
+	<script>
+		$(document).ready(function () {
+			$(document).on( 'scroll', function(){
+				var pos = $('main').offset();
+				var navoffset = pos.top - 100 - $(document).scrollTop();
+				//console.info(navoffset);
+				if (navoffset <= 0) {
+					if (!($("header").hasClass("top")))
+						$("header").addClass("top");
+				} else {
+					$("header").removeClass("top");
+				}
+			});
+		});
+	</script>
+
+
+</body>
+</html>

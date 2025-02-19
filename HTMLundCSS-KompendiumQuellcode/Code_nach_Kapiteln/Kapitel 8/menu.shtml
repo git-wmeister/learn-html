@@ -1,0 +1,27 @@
+<ul>
+  <!--#if expr="$QUERY_STRING = home" --><li class="active">
+<!--#else --><li><!--#endif -->
+  <a href="./design18.shtml">Startseite</a></li>
+  <li class="dropdown">Spielplätze
+    <ul>
+      <!--#if expr="$QUERY_STRING = spielplatz" -->
+<li class="active"><!--#else --><li><!--#endif -->
+      <a href="./playground09.shtml">Spielplatz</a></li>
+      <!--#if expr="$QUERY_STRING = cspielplatz" -->
+<li class="active"><!--#else --><li><!--#endif -->
+      <a href="./cool_playground07.shtml">Cooler Spielplatz</a>
+      </li>
+    </ul>
+  </li>
+  <!--#if expr="$QUERY_STRING = bs" --><li class="active">
+<!--#else --><li><!--#endif -->
+  <a href="./bs02.shtml">Bootstrap</a></li>
+  <!--#if expr="$QUERY_STRING = js" --><li class="active"><!--#else --><li><!--#endif -->
+  <a href="./js10.shtml">JavaScript</a></li>
+  <!--#if expr="$QUERY_STRING = api" --><li class="active">
+  <!--#else --><li><!--#endif -->
+  <a href="./api02.shtml">HTML-API</a></li>
+  <!--#if expr="$QUERY_STRING = kontakt" --><li class="active">
+<!--#else --><li><!--#endif -->
+  <a href="./kontaktformular07.shtml">Kontaktformular</a></li>
+</ul>
